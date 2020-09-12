@@ -1,0 +1,107 @@
+ <!DOCTYPE html>
+<html>
+<title>Kieran Adcock Portfolio</title>
+<link rel="stylesheet" href="styles/styles.css">
+<body>
+
+
+<!--Navbar DONT EDIT-->
+<div class="navbar">
+	<ul class="title">
+		<li style="float:left; position:relative; right: -5px;"><a href="#home" class="title-home"> <b>Kieran Adcock</b> Games Developer</a></li>
+
+		<!-- Float right links--> 
+		<ul class="right-links">
+			
+			<li><a href="#cv" class="link-item button">CV</a></li>
+			<li><a href="#contact" class="link-item button">Contact</a><li>
+			<li><a href="#about" class="link-item button">About</a><li>
+		</ul>
+	</ul>
+</div>
+
+
+
+<div class="flex-container">
+
+
+
+<div class="flex-child">
+	<div class="project-highlight">
+
+		<div class="row">
+		  <div class="column">
+		  	<!--HERE ADD IN IMAGE LINK AND CHANGE ALT TO TEXT DESCRIPTION U WANT BELOW IT-->
+		    <img src="imgs/quack_1.png" alt="DDR" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/quack_2.png" alt="MAZE MINIGAME" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/quack_3.png" alt="Book" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/quack_4.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		</div>
+
+		<!-- The expanding image container -->
+		<div class="container">
+
+
+		  <!-- Expanded image -->
+		  <img id="expandedImg" style="width:85%">
+
+		  <!-- Image text -->
+		  <div id="imgtext"></div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="flex-child">
+	<div align="left" class="Project-Description">
+
+		<!-- HERE ADD IN PROJECT TITLE AND DESCRIPTION -->
+
+			<h1> Quack From Home Hackathon </h1>
+
+			<p>I participated in the 2020 Quack From Home Hackathon hosted by Dundee University Computing society. Participants have 32 hours to create an application, the theme for the hackathon was "modelling COVID-19 data in an interesting way".</p>
+
+			<p>I decided to use my experience with Unity to create an interesting application for displaying COVID-19 data. The Unity asset store had a asset I used as a template for my project, the asset contained a simple sphere with a world map texture and a script that creates rectangular meshes at a longitude and latitude position so geographical data could be shown on the sphere. After getting familar with the base project I found that the way the longitude and latitude were calculated was wrong as the UV map for the earth was a perfect sphere whereas the earth resembles a shape known as a "equirectangular" shape. After some messing around with shaders and UV maps I had fixed the coordinate calculation problems and given longitude and latitude coordinates the application would correctly display the mesh in the right place on the planet.</p>
+
+			<p>I created my own earth texture using Photoshop and then created a large dataset to map onto the earth. I used a worldwide dataset which had geographical information for confirmed cases, deaths and recovered. After taking 9+ datasets and reordering them to suit my needs I plugged them into my application and created a very interesting interactive look at COVID-19 data. The user can pan around the planet and see how each part of the world has been affected by the virus as the data points were sorted in height by magnitude.</p>
+
+			<p> You can visit my COVID-19 interactive 3D Globe on Itch.io by following the link below:  </p>
+
+			<p><iframe src="https://itch.io/embed/756536" height="137" width="552" frameborder="0"><a href="https://keys42.itch.io/covid-19-3d-globe-visualiser">COVID-19 3D Globe Visualiser by Keys42</a></iframe></p>
+	</div>
+</div>
+
+</div>
+
+<div class="specs-flex">
+
+	<!--HERE CHANGE THE PLATFORM, TECH AND YEAR -->
+
+	<div class="specs-flex-child">
+		<img src="imgs/icon.png"/>
+		<p><b>Platform:</b><br> Windows </p>
+	</div>
+	
+	<div class="specs-flex-child">
+		<img src="imgs/spanner.png"/>
+		<p><b>Technology:</b><br>Unity 5.0, Visual Studio 2019, Github</p>
+	</div>
+	<div class="specs-flex-child">
+		<img src="imgs/date.png"/>
+			<p><b>Year: </b><br>2020  </p>
+	</div>
+	
+</div>
+
+</div>
+		<script src="scripts/main.js"></script>
+</body>
+</html> 

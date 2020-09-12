@@ -5,10 +5,10 @@
 <body>
 
 
-<!--Navbar-->
+<!--Navbar DONT EDIT-->
 <div class="navbar">
 	<ul class="title">
-		<li style="float:left"><a href="#home" class="title-home"> <b>Kieran Adcock</b> Games Developer</a></li>
+		<li style="float:left; position:relative; right: -5px;"><a href="#home" class="title-home"> <b>Kieran Adcock</b> Games Developer</a></li>
 
 		<!-- Float right links--> 
 		<ul class="right-links">
@@ -20,44 +20,80 @@
 	</ul>
 </div>
 
-<div class="Project-Description">
-		<h1> Edinburgh Zoo Game </h1>
 
-		<p>wowoeoeeowowoo abgry go zoom</p>
+
+<div class="flex-container">
+
+
+
+<div class="flex-child">
+	<div class="project-highlight">
+
+		<div class="row">
+		  <div class="column">
+		  	<!--HERE ADD IN IMAGE LINK AND CHANGE ALT TO TEXT DESCRIPTION U WANT BELOW IT-->
+		    <img src="imgs/Coke_5.png" alt="DDR" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/Coke_3.png" alt="MAZE MINIGAME" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/Coke_1.png" alt="Book" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/Coke_4.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		</div>
+
+		<!-- The expanding image container -->
+		<div class="container">
+
+
+		  <!-- Expanded image -->
+		  <img id="expandedImg" style="width:85%">
+
+		  <!-- Image text -->
+		  <div id="imgtext"></div>
+
+		</div>
+
 	</div>
+</div>
 
-<div class="project-highlight">
+<div class="flex-child">
+	<div align="left" class="Project-Description">
 
-	<div class="row">
-	  <div class="column">
-	    <img src="imgs/zoodance1.png" alt="DDR" style="width:100%" onclick="myFunction(this);">
-	  </div>
-	  <div class="column">
-	    <img src="imgs/zoomaze.png" alt="MAZE" style="width:100%" onclick="myFunction(this);">
-	  </div>
-	  <div class="column">
-	    <img src="imgs/zoobook.png" alt="Book" style="width:100%" onclick="myFunction(this);">
-	  </div>
-	  <div class="column">
-	    <img src="imgs/zoomenu.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
-	  </div>
+		<!-- HERE ADD IN PROJECT TITLE AND DESCRIPTION -->
+
+			<h1> Coca-Cola Game Jam </h1>
+
+			<p>Myself and a team of three other programmers took part in the Coca Cola game jam to create a game about crisis management within 48 hours. The game works similar to a cookie clicker/idle game where the player must collect money overtime and spend their cash on factories, skills and upgrades. As the theme was crisis management we designed a system in which random events will occur during the game in which the player will have to make a decision on how they want to handle said event, the player is rewarded or penalised depending on how they deal with the random event. Within the project I was in charge with developing a fully functional skill tree utilizing unity’s scriptable object system. </p>
+
+			<p>The game was a winner in both categories, Best Playable Prototype and Best Concept. This included a cash prize.</p>
 	</div>
-
-	<!-- The expanding image container -->
-	<div class="container">
-
-	  <!-- Expanded image -->
-	  <img id="expandedImg" style="width:48%">
-
-	  <!-- Image text -->
-	  <div id="imgtext"></div>
-
-	</div>
+</div>
 
 </div>
 
+<div class="specs-flex">
 
+	<!--HERE CHANGE THE PLATFORM, TECH AND YEAR -->
 
+	<div class="specs-flex-child">
+		<img src="imgs/icon.png"/>
+		<p><b>Platform:</b><br> Windows </p>
+	</div>
+	
+	<div class="specs-flex-child">
+		<img src="imgs/spanner.png"/>
+		<p><b>Technology:</b><br>Unity, Visual Studio 2017, Github</p>
+	</div>
+	<div class="specs-flex-child">
+		<img src="imgs/date.png"/>
+			<p><b>Year: </b><br>2017/18  </p>
+	</div>
+	
+</div>
 
 </div>
 		<script src="scripts/main.js"></script>
