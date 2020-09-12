@@ -1,0 +1,389 @@
+@font-face{
+	font-family: 'caliplate';
+	src:url('../fonts/california.ttf');
+}
+
+@font-face{
+	font-family: 'roman';
+	src:url('../fonts/roman.ttf');
+}
+
+@font-face{
+	font-family: 'blanc';
+	src:url('../fonts/blanc.ttf');
+}
+
+@font-face{
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+body {
+  background-color: #161616;
+  margin: auto;
+}
+
+ul{
+	list-style-type: none;
+	margin: 2px;
+	padding: 0;
+	overflow: hidden;
+	font-family: caliplate;
+	font-size: 35px;
+}
+
+li{
+	float: right;
+}
+
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding:10px 20px;
+	text-decoration: none;
+	position: relative;
+
+}
+
+li a:hover{
+
+	color: #ff7000;
+}
+
+img{
+	width: 60%;
+	height: auto;
+	position: relative;
+
+}
+
+#hero-splash{
+	background-image: url('../imgs/bg3.png');
+	width: 100%;
+	height: 700px;
+	top: -1500px;
+    background-size: cover;
+    color: white;
+    background-position: center;
+    border-top-color: #131313;
+	border-top-width: 10px;
+	border-top-style: solid;
+}
+
+#hero-splash h1{
+
+	font-family: caliplate;
+	font-size: 110px;
+	text-align: center;
+	position: relative;
+	top: 190px;
+	left: 25%;
+	box-shadow: .2em 0 0 #ffffff;
+    margin: 2rem 1rem;
+	width: 21ch;
+  overflow: hidden;
+  color: #FFF;
+	white-space: nowrap;
+	animation: caret .5s step-end infinite alternate,
+             type 3s steps(20, end)
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+}
+@keyframes caret { 
+  50% { 
+    box-shadow: .6em 0 0 transparent;
+  }
+}
+
+#hero-splash p{
+	font-family: "Ubuntu";
+    text-align: center;
+	font-size: 25px;;
+	position: relative;
+	top: 250px;
+}
+
+hr{
+	width: 300px;
+	position: relative;
+	color: white;
+	border: 3px solid white;
+	top: 190px;
+}
+
+
+.programming-projects{
+	background-color: #131313;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    padding-top: 10px;
+    height: 2500px;
+}
+
+.programming-projects h1{
+	font-family: caliplate;
+	color: white;
+	text-align: center;
+	font-size: 45px;
+
+}
+
+.title-home{
+	text-decoration: 3px underline #ff7000;
+	position: relative;
+	
+
+}
+
+.img-and-text {
+	
+    width: 30%;
+    text-align: center;
+}
+
+.img-and-text img {
+    display: block;
+    margin: 0 auto;
+}
+
+.img-container{
+
+	display: flex;
+	padding-bottom: 100px;
+}
+
+.img-container div{
+	
+	position: relative;
+	left: 60px;
+
+}
+
+/*
+.txt-container{
+
+	display: flex;
+	justify-content: space-around;
+	top: 80px;
+	position: relative;
+	
+}
+*/
+.img-container a{
+	
+	font-family: caliplate;
+	color: white;
+	font-size: 25px;
+	position: relative;
+	text-decoration: none;
+	transition: underline .5s;
+}
+
+
+
+.img-container a::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  top: 100%;
+  left: 0;
+  background: #ff7000;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.img-container a:hover {
+  color: #95a5a6;
+}
+.img-container a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+.game-jams{
+
+	position: relative;
+	border-top-color: #ff7000;
+	border-top-style: dotted;
+	border-top-width: thick;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+	top: 10px;
+}
+
+.flex-child {
+    flex: 1 1 auto;
+    background-color: #00000078;
+	height: 800px;
+}  
+
+.flex-child:first-child {
+    background-color: #00000026;
+    border-right-style: dashed;
+border-right-color: #ff7000;
+}
+
+.highlight-img img{
+	position: relative;
+	top: 200px;
+	left: 200px;
+	width: 500px;
+    height: 300px;
+    border:2px solid #ff7000;
+    background: url(img/tiger.png) no-repeat;
+    box-shadow: 5px 5px 5px #ff7000;
+ }
+
+
+
+.project-highlight{
+	
+	position: relative;
+
+	
+}
+ .project-highlight h1{
+ 	position: relative;
+
+
+ }
+
+  .project-highlight p{
+ 	position: relative;
+ 	bottom: 190px;
+	left: 850px;
+	color: white;
+
+ }
+
+.Project-Description h1{
+
+	position: relative;
+	font-size: 70px;
+	font-family: caliplate;
+	color: white;
+	text-align: center;
+    width: 750px;
+    margin: 0px;
+       top: 20px;
+} 
+
+
+
+
+.Project-Description p{
+
+	position: relative;
+	color: white;
+	text-align: justify;
+	width: 700px;
+	padding-left: 2em;
+	font-family: blanc;
+	font-size: 14px;
+	top: 30px;
+}
+
+.Project-Description {
+	height: 500px;
+	width: 50%;
+}
+
+/*img grid*/
+
+  /* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width:20%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+.column img:hover {
+  opacity: 2;
+
+}
+
+.row{
+	position: relative;
+	left: 50px;
+	top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  left: 59px;
+	top: 40px;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  
+  left: 370px;
+  color: white;
+  font-family: caliplate;
+  font-size: 20px;
+bottom: -45px;
+}
+
+.specs-flex{
+	display: flex;
+    flex-direction: row;
+    position: relative;
+	background-color: #ff7000;
+	width: 100%;
+	height: 105px;
+	
+
+}
+
+.specs-flex-child{
+	flex: 1 1 auto;
+	font-family: caliplate;
+	text-align: center;
+
+}
+
+.specs-flex-child p{
+	margin: 15px;
+	font-size: 20px;
+
+}
+
+
+.specs-flex-child img{
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	position: relative;
+	top: 10px;
+}
