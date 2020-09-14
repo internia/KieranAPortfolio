@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html>
+<title>Kieran Adcock Portfolio</title>
+<link rel="stylesheet" href="styles/styles.css">
+<body>
+
+
+<!--Navbar DONT EDIT-->
+<div class="navbar">
+	<ul class="title">
+		<li style="float:left; position:relative; right: -5px;"><a href="#home" class="title-home"> <b>Kieran Adcock</b> Games Developer</a></li>
+
+		<!-- Float right links--> 
+		<ul class="right-links">
+			
+			<li><a href="#cv" class="link-item button">CV</a></li>
+			<li><a href="#contact" class="link-item button">Contact</a><li>
+			<li><a href="#about" class="link-item button">About</a><li>
+		</ul>
+	</ul>
+</div>
+
+
+
+<div class="flex-container">
+
+
+
+<div class="flex-child">
+	<div class="project-highlight">
+
+		<div class="row">
+		  <div class="column">
+		  	<!--HERE ADD IN IMAGE LINK AND CHANGE ALT TO TEXT DESCRIPTION U WANT BELOW IT-->
+		    <img src="imgs/directx_1.png" alt="DDR" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/tessellationgif-crop.gif" alt="MAZE MINIGAME" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/directx_2.png" alt="Book" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/directx_3.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		</div>
+
+		<!-- The expanding image container -->
+		<div class="container">
+
+
+		  <!-- Expanded image -->
+		  <img id="expandedImg" style="width:85%">
+
+		  <!-- Image text -->
+		  <div id="imgtext"></div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="flex-child">
+	<div align="left" class="Project-Description">
+
+		<!-- HERE ADD IN PROJECT TITLE AND DESCRIPTION -->
+
+			<h1> DirectX11 Shaders </h1>
+
+			<p>I have experience with graphics programming including both DirectX11 (HLSL) and OpenGL. I've created a shader for each stage of the graphics pipeline from the vertex shader all the way through to the pixel shader. </p>
+
+			<p>During development in DirectX11 I created an application that showcased shadows, post processing, multiple lights, vertex manipulation, dynamic tesssellation and more. I am most proud of my implementation of dynamic tessellation as it is a fundamental graphics programming technique used in games to balance performance and visual fidelity. My implementation was based on the position of the camera so as the player gets closer to a piece of geometry the more detailed the geometry will become.</p>
+
+			<p>I used ImGui throughout in order to assist development. ImGui is a graphical UI which can be used to modify parameters during runtime. This improved development time as I can test various values without having to retype a line of code and recompile each time a new parameter needs tested.  </p>
+
+	</div>
+</div>
+
+</div>
+
+<div class="specs-flex">
+
+	<!--HERE CHANGE THE PLATFORM, TECH AND YEAR -->
+
+	<div class="specs-flex-child">
+		<img src="imgs/icon.png"/>
+		<p><b>Platform:</b><br> Windows </p>
+	</div>
+	
+	<div class="specs-flex-child">
+		<img src="imgs/spanner.png"/>
+		<p><b>Technology:</b><br>DirectX11, Visual Studio 2019, ImGui</p>
+	</div>
+	<div class="specs-flex-child">
+		<img src="imgs/date.png"/>
+			<p><b>Year: </b><br>2019  </p>
+	</div>
+	
+</div>
+
+</div>
+		<script src="scripts/main.js"></script>
+</body>
+</html> 

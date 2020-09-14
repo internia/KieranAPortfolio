@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+<html>
+<title>Kieran Adcock Portfolio</title>
+<link rel="stylesheet" href="styles/styles.css">
+<body>
+
+
+<!--Navbar DONT EDIT-->
+<div class="navbar">
+	<ul class="title">
+		<li style="float:left; position:relative; right: -5px;"><a href="#home" class="title-home"> <b>Kieran Adcock</b> Games Developer</a></li>
+
+		<!-- Float right links--> 
+		<ul class="right-links">
+			
+			<li><a href="#cv" class="link-item button">CV</a></li>
+			<li><a href="#contact" class="link-item button">Contact</a><li>
+			<li><a href="#about" class="link-item button">About</a><li>
+		</ul>
+	</ul>
+</div>
+
+
+
+<div class="flex-container">
+
+
+
+<div class="flex-child">
+	<div class="project-highlight">
+
+		<div class="row">
+		  <div class="column">
+		  	<!--HERE ADD IN IMAGE LINK AND CHANGE ALT TO TEXT DESCRIPTION U WANT BELOW IT-->
+		    <img src="imgs/unreal_1.png" alt="DDR" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/unreal_gif.gif" alt="MAZE MINIGAME" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/unreal_2.png" alt="Book" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		  <div class="column">
+		    <img src="imgs/unreal_3.png" alt="Menu" style="width:100%" onclick="myFunction(this);">
+		  </div>
+		</div>
+
+		<!-- The expanding image container -->
+		<div class="container">
+
+
+		  <!-- Expanded image -->
+		  <img id="expandedImg" style="width:85%">
+
+		  <!-- Image text -->
+		  <div id="imgtext"></div>
+
+		</div>
+
+	</div>
+</div>
+
+<div class="flex-child">
+	<div align="left" class="Project-Description">
+
+		<!-- HERE ADD IN PROJECT TITLE AND DESCRIPTION -->
+
+			<h1> Inventory System (UE4) </h1>
+
+			<p>I developed an inventory system that allows the user to pick up usable items in the game world and places them into the players inventory for later use/functionality. The mechanic was loosely inspired by popular RPG games like World of Warcraft and Skyrim, however the mechanic can be applied to a wide range of genres including but not limited to point and click adventure games like Monkey Island, side scrolling platformers/sandboxes like Terraria and many more.</p>
+
+			<p> Inventory systems are an element of game development that transcends genre as the aesthetic and functionality can be changed but the systems logic largely stays the same. The system is made up of several components and was achieved by using a mixture of C++ scripting for functionality and blueprinting for UI elements within Unreal Engine 4</p>
+
+			<p> A demonstration of the inventory system can be seen here: https://www.youtube.com/watch?v=pw-5VKCHDiM </p>
+	</div>
+</div>
+
+</div>
+
+<div class="specs-flex">
+
+	<!--HERE CHANGE THE PLATFORM, TECH AND YEAR -->
+
+	<div class="specs-flex-child">
+		<img src="imgs/icon.png"/>
+		<p><b>Platform:</b><br> Windows </p>
+	</div>
+	
+	<div class="specs-flex-child">
+		<img src="imgs/spanner.png"/>
+		<p><b>Technology:</b><br>Unreal Engine 4, Visual Studio 2019</p>
+	</div>
+	<div class="specs-flex-child">
+		<img src="imgs/date.png"/>
+			<p><b>Year: </b><br>2019  </p>
+	</div>
+	
+</div>
+
+</div>
+		<script src="scripts/main.js"></script>
+</body>
+</html> 

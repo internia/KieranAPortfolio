@@ -1,0 +1,1 @@
+<iframe src="https://itch.io/embed/756536?bg_color=222222&amp;fg_color=eeeeee&amp;link_color=ff5000&amp;border_color=363636" width="552" height="167" frameborder="0"><a href="https://keys42.itch.io/covid-19-3d-globe-visualiser">COVID-19 3D Globe Visualiser by Keys42</a></iframe>
