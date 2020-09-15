@@ -23,13 +23,27 @@ body {
   margin: auto;
 }
 
+html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.navbar{
+
+position: relative;
+z-index: 1;
+}
+
 ul{
 	list-style-type: none;
 	margin: 2px;
 	padding: 0;
 	overflow: hidden;
-	font-family: caliplate;
-	font-size: 35px;
+	font-family: Ubuntu;
+	font-size: 25px;
 }
 
 li{
@@ -43,6 +57,8 @@ li a{
 	padding:10px 20px;
 	text-decoration: none;
 	position: relative;
+	position: relative;
+right: 10px;
 
 }
 
@@ -58,11 +74,37 @@ img{
 
 }
 
+.title-pages{
+		list-style-type: none;
+	margin: 2px;
+	padding: 0;
+	overflow: hidden;
+	font-family: Ubuntu;
+	font-size: 25px;
+	position: relative;
+	z-index: 1;
+	top: 8px;
+}
+
+.navbar-img{
+
+	width: 100%;
+}
+
+.navbar-img img{
+	
+	width: 102%;
+	    position: relative;
+    top: -50px;
+    right: 18px;
+}
+
 #hero-splash{
 	background-image: url('../imgs/bg3.png');
 	width: 100%;
 	height: 700px;
-	top: -1500px;
+	top: -87px;
+	position: relative;
     background-size: cover;
     color: white;
     background-position: center;
@@ -139,7 +181,7 @@ hr{
 .title-home{
 	text-decoration: 3px underline #ff7000;
 	position: relative;
-	
+	left: 140px;
 
 }
 
@@ -223,7 +265,10 @@ hr{
     display: flex;
     flex-direction: row;
     position: relative;
-	top: 10px;
+	bottom: 57px;
+	margin: 1px;
+	border-left: black solid 2px;
+border-right: black solid 2px;
 }
 
 .flex-child {
@@ -360,9 +405,11 @@ bottom: -45px;
     flex-direction: row;
     position: relative;
 	background-color: #ff7000;
-	width: 100%;
 	height: 105px;
-	
+	bottom: 58px;
+	margin: 1px;
+	border-left: black solid 2px;
+	border-right: black solid 2px;
 
 }
 
